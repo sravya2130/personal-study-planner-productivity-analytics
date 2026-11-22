@@ -1,4 +1,3 @@
-
 __pycache__/
 *.py[cod]
 .venv/
@@ -6,3 +5,10 @@ venv/
 .env
 .idea/
 .vscode/
+
+# Personal application data
+users.json
+tasks.json
+habits.json
+Studytime.csv
+slog.csv
