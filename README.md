@@ -1,85 +1,104 @@
-# 📚 Personal Study Planner & Productivity Analytics Tool
+# Personal Study Planner and Productivity Analytics Tool
 
-A Python-based desktop application designed to help students organize study tasks, manage deadlines, track study hours, and analyze their weekly productivity through visual reports.
+A Python-based desktop application designed to help students organize academic tasks, manage deadlines, track study hours, monitor daily habits, and analyze productivity through visual reports.
 
-✨ Features
+## Features
 
-   1. 📋 Task Management
-        - Add and manage study tasks.
-        - Set deadlines for tasks.
-        - View all pending and completed tasks.
-        - Mark tasks as completed.
-        - Delete tasks.
- 
-    2. ⏱️ Study Time Tracking
-        - Log study hours by category.
-        - Monitor total study hours.
-        - Maintain a record of study activities.
+### 1. Task Management
+- Add study tasks with deadlines.
+- View pending and completed tasks.
+- Mark tasks as completed.
+- Delete tasks.
+- Assign priorities: High, Medium, and Low.
+- Search and filter tasks.
 
-    3. 📊 Productivity Analytics
-        - View total tasks and completed tasks.
-        - Track overall study hours.
-        - Generate weekly productivity analytics.
-        - Visualize study hours using bar charts.
+### 2. Study Time Tracking
+- Log study hours by subject or category.
+- Maintain a record of study sessions.
+- Monitor total study hours.
 
-    4.  🖥️ User Interface
-        - Simple and user-friendly desktop interface.
-        - Built using Python Tkinter.
+### 3. Habit Tracker
+- Track daily habits.
+- Mark habits as completed.
+- Monitor weekly habit completion.
+- Track habit streaks.
 
-🛠️ Technologies Used
+### 4. Productivity Analytics
+- View total and completed tasks.
+- Monitor weekly study hours.
+- Track progress toward a weekly study-hour goal.
+- Analyze habit completion.
+- Identify the most studied subject.
+- Visualize study activity through charts.
 
-| Technology |         Purpose           |
-|------------|---------------------------|
-| Python     | Core programming language |
-| Tkinter    |       Desktop GUI         |
-| JSON       |       Data storage        |
-| CSV        | Data handling and records |
-| Matplotlib | Productivity visualization|
+### 5. Dashboard
+- View important productivity statistics.
+- Monitor task completion progress.
+- View study-hour summaries.
+- Access productivity insights.
 
-📁 Project Structure
+## Technologies Used
 
-Personal-Study-Planner/
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| CustomTkinter | Desktop graphical user interface |
+| Matplotlib | Charts and data visualization |
+| JSON | Task and habit data storage |
+| CSV | Study-time records |
+
+## Project Structure
+
+Personal Study Planner/
 │
-├── study_planner.py
+├── study_planner_ctk.py
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+├── .gitignore
 
-⚙️ Installation & Setup
+Personal application data files are stored locally and excluded from GitHub.
 
-    1. Clone the repository
+## Installation and Setup
 
-        git clone https://github.com/sravya2130/personal-study-planner-productivity-analytics.git
+### 1. Clone the repository
 
-    2. Navigate to the project directory
+```bash
+git clone https://github.com/sravya2130/personal-study-planner-productivity-analytics.git
+```
 
-        cd personal-study-planner-productivity-analytics
+### 2. Navigate to the project directory
 
-    3. Install the required dependencies
+```bash
+cd personal-study-planner-productivity-analytics
+```
 
-        pip install -r requirements.txt
+### 3. Install dependencies
 
-    4. Run the application
+```bash
+pip install -r requirements.txt
+```
 
-        python study_planner.py
+### 4. Run the application
 
-🎯 Project Objective
+```bash
+python study_planner_ctk.py
+```
 
-The main objective of this project is to help students improve their time management and study habits by providing an organized platform for task scheduling, study-hour tracking, and productivity analysis.
+## Project Objective
 
-🚀 Future Enhancements
+The objective of this project is to provide students with an organized platform to manage academic tasks, track study time, build consistent habits, and understand their productivity through visual analytics.
+
+## Future Enhancements
 
 - Add reminders and notifications for upcoming deadlines.
 - Introduce monthly and yearly productivity reports.
-- Add subject-wise performance analytics.
-- Improve the user interface and dashboard design.
+- Add more detailed subject-wise analytics.
+- Export productivity reports.
 
-👩‍💻 Developed By
+## Developed By
 
 SREERAM JHANSI LAKSHMI SRAVYANJALI
 
 B.Tech – Computer Science and Engineering
 
-GitHub: @sravya2130
-
-⭐ If you find this project useful, consider giving it a star!
+GitHub: [@sravya2130](https://github.com/sravya2130)
