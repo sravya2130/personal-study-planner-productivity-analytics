@@ -1,6 +1,33 @@
 # Personal Study Planner and Productivity Analytics Tool
 
-A Python-based desktop application designed to help students organize academic tasks, manage deadlines, track study hours, monitor daily habits, and analyze productivity through visual reports.
+A Python-based desktop application designed to help students organize academic tasks, manage deadlines, track study hours, build consistent habits, and understand their productivity through visual analytics.
+
+## Application Screenshots
+
+### 1. Dashboard
+Get an overview of tasks, study progress, and productivity at a glance.
+
+![Dashboard](screenshots/dashboard.png)
+
+### 2. All Tasks
+Manage academic tasks, deadlines, priorities, and completion status.
+
+![All Tasks](screenshots/all-tasks.png)
+
+### 3. Habit Tracker
+Build consistent daily routines and monitor habit completion and streaks.
+
+![Habit Tracker](screenshots/habit-tracker.png)
+
+### 4. Weekly Analytics
+Visualize study activity and compare study hours across subjects.
+
+![Weekly Analytics](screenshots/weekly-analytics.png)
+
+### 5. Productivity Insights
+Review productivity statistics, task completion, habit progress, and weekly study goals.
+
+![Productivity Insights](screenshots/productivity-insights.png)
 
 ## Features
 
@@ -49,12 +76,21 @@ A Python-based desktop application designed to help students organize academic t
 
 ## Project Structure
 
+```text
 Personal Study Planner/
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── all-tasks.png
+│   ├── habit-tracker.png
+│   ├── weekly-analytics.png
+│   └── productivity-insights.png
 │
 ├── study_planner_ctk.py
 ├── requirements.txt
 ├── README.md
-├── .gitignore
+└── .gitignore
+```
 
 Personal application data files are stored locally and excluded from GitHub.
 
@@ -80,6 +116,14 @@ pip install -r requirements.txt
 
 ### 4. Run the application
 
+On Windows:
+
+```powershell
+py study_planner_ctk.py
+```
+
+Alternatively:
+
 ```bash
 python study_planner_ctk.py
 ```
@@ -97,7 +141,7 @@ The objective of this project is to provide students with an organized platform 
 
 ## Developed By
 
-SREERAM JHANSI LAKSHMI SRAVYANJALI
+**SREERAM JHANSI LAKSHMI SRAVYANJALI**
 
 B.Tech – Computer Science and Engineering
 

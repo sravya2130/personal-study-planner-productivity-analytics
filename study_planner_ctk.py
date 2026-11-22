@@ -1030,6 +1030,18 @@ class StudyPlannerApp(ctk.CTk):
             text_color=TEXT
         ).pack(anchor="w", padx=18, pady=(15, 10))
 
+        habit_list = ctk.CTkScrollableFrame(
+            list_card,
+            fg_color="transparent",
+            corner_radius=10
+        )
+        habit_list.pack(
+            fill="both",
+            expand=True,
+            padx=12,
+            pady=(0, 12)
+        )
+
         if not habits:
             ctk.CTkLabel(
                 list_card,
@@ -1043,7 +1055,7 @@ class StudyPlannerApp(ctk.CTk):
             completed_dates = habit.get("completed_dates", [])
 
             row = ctk.CTkFrame(
-                list_card,
+                habit_list,
                 fg_color="#FFFFFF",
                 corner_radius=10
             )
@@ -1130,9 +1142,20 @@ class StudyPlannerApp(ctk.CTk):
         )
         self.refresh_cards()
         self.clear_display()
+        insights_frame = ctk.CTkScrollableFrame(
+            self.display,
+            fg_color="transparent",
+            corner_radius=10
+        )
+        insights_frame.pack(
+            fill="both",
+            expand=True,
+            padx=5,
+            pady=5
+        )
 
         self.section_heading(
-            self.display,
+            insights_frame,
             "Your productivity overview",
             "A summary of your tasks, study time and habits."
         )
@@ -1200,7 +1223,7 @@ class StudyPlannerApp(ctk.CTk):
 
         # Statistics cards
         cards_frame = ctk.CTkFrame(
-            self.display,
+            insights_frame,
             fg_color="transparent"
         )
         cards_frame.pack(
@@ -1281,7 +1304,7 @@ class StudyPlannerApp(ctk.CTk):
 
         # Best subject section
         subject_card = ctk.CTkFrame(
-            self.display,
+            insights_frame,
             fg_color="#FAF9F6",
             corner_radius=15
         )
@@ -1309,7 +1332,7 @@ class StudyPlannerApp(ctk.CTk):
 
         # Weekly study goal progress
         goal_card = ctk.CTkFrame(
-            self.display,
+            insights_frame,
             fg_color="#F1F6F1",
             corner_radius=15
         )
